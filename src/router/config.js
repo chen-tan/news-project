@@ -1,0 +1,50 @@
+export default [
+    {
+        name:'home',
+        path:'/',
+        component:()=>import('@/views/Home')
+    },
+    {
+        name:'login',
+        path:'/login',
+        component:()=>import('@/views/Login')
+    },
+    {
+        name:'reg',
+        path:'/reg',
+        component:()=>import('@/views/Reg')
+    },
+    {
+        name:'news',
+        path:'/news/:id',
+        component:()=>import('@/views/ChannelNews')
+    },
+    {
+        name:'personal',
+        path:'/personal',
+        component:()=>import('@/views/Personal'),
+        meta:{
+            auth:true,
+        }
+    },
+    {
+        name:'auth',
+        path:'/auth',
+        component:()=>import('@/components/Auth')
+
+    },
+    {
+        name:'protected',
+        path:'/protected',
+        component:()=>import('@/views/Protected'),
+        meta:{
+            auth:true
+        }
+    },
+    {
+        name:'notFound',
+        path:'*',
+        component:()=>import('@/views/notFound.vue')
+    }
+
+];
