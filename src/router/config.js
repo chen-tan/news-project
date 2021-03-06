@@ -1,16 +1,16 @@
 /*
  * @Author: your name
  * @Date: 2021-02-18 15:55:07
- * @LastEditTime: 2021-03-06 22:10:37
+ * @LastEditTime: 2021-03-06 22:24:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \practicec:\Users\chentan\Desktop\news-project\src\router\config.js
  */
 export default [
-    {
-        path:'/docs/index.html',
-        redirect:'/'
-    },
+    // {
+    //     path:'/docs/index.html',
+    //     redirect:'/'
+    // },
     {
         name:'home',
         path:'/',
