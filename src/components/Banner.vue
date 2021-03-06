@@ -20,6 +20,7 @@
          :class="{active:i===curIndex}"
          v-for="(dot,i) in imgList.length"
          :key="dot"
+         @mouseover="curIndex=i"
         ></li>
     </ul>
   </div>

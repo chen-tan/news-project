@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-02-19 22:41:35
+ * @LastEditTime: 2021-03-06 21:45:09
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \practicec:\Users\chentan\Desktop\news-project\src\store\loginUser.js
+ */
 
 import {login,whoAmI,reg,loginOut} from '../services/userService'
 
@@ -56,7 +64,9 @@ export default {
                  context.commit('setData',resp.data);
                  result = true;
              }
+             console.log('还没有设置为false');
              context.commit('setLoading',false);
+             console.log('已经设置为false');
              return result;
          },
          loginOut(context){
